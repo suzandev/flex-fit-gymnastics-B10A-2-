@@ -35,6 +35,10 @@ header {
 
 /* ======= Header Section style Start ======= */
 
+.menu-toggle {
+  display: none;
+}
+
 .header_container {
   max-width: 1280px;
   margin: 0 auto;
@@ -93,7 +97,6 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 1280px;
-  /* padding: 20px; */
 }
 
 .text_content {
@@ -115,6 +118,8 @@ header {
   margin: 40px 0;
   font-size: 16px;
   font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
 }
 
 .buttons {
@@ -263,8 +268,61 @@ header {
 }
 /* ======= Change Habits Section style End ======= */
 
+/* ======= Fitness Section style Start ======= */
+
+.fitness_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  gap: 30px;
+  padding: 50px;
+}
+
+.dFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.content {
+  padding: 0 20px;
+}
+.content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 30px 0px;
+}
+
+.fitness_image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.join-btn {
+  padding: 12px 35px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+}
+
+/* ======= Fitness Section style End ======= */
+
 /* *-*-*-*- Responsive For Mobile Device -*-*-*-*-* */
 @media screen and (max-width: 576px) {
+  .nav {
+    padding: 20px 20px;
+  }
   .menu {
     display: none;
   }
@@ -277,6 +335,9 @@ header {
 
   .text_content {
     max-width: 100%;
+  }
+  .buttons {
+    justify-content: center;
   }
 
   .image_content {
@@ -294,6 +355,124 @@ header {
   .download_btn {
     padding: 8px 10px;
   }
+
+  .fitness_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .content h1 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: left;
+  }
+  .content p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.join-btn {
+  width: 100%;
 }
 
 /* *-*-*-*- Responsive For Tablet Device -*-*-*-*-* */
+
+.menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 20px 20px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+
+  .menu.active li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .main_content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text_content {
+    max-width: 100%;
+  }
+
+  .image_content {
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .top_badge {
+    top: 10%;
+    right: 5%;
+  }
+
+  .bottom_badge {
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .join_btn,
+  .download_btn {
+    padding: 12px 24px;
+  }
+}
+
+/* ======= Fitness Section style Start ======= */
+
+.fitness_section h1 {
+  font-size: 2rem;
+}
+
+.fitness_section p {
+  font-size: 1rem;
+}
+
+.join_btn {
+  padding: 10px 20px;
+}
