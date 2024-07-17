@@ -88,14 +88,12 @@ header {
   color: #fff;
 }
 
-/* ======= Header Section style End ======= */
-
 .main_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1280px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .text_content {
@@ -108,14 +106,15 @@ header {
 }
 
 .text_content .highlight {
-  font-family: "Cursive", serif;
+  font-family: "Inter", sans-serif;
   font-size: 64px;
   color: rgb(230, 83, 60);
 }
 
 .text_content p {
-  margin: 20px 0;
-  font-size: 18px;
+  margin: 40px 0;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .buttons {
@@ -195,6 +194,74 @@ header {
   bottom: 13%;
   left: -10%;
 }
+
+/* ======= Header Section style End ======= */
+
+/* ======= Change Habits Section style Start ======= */
+
+.change_habits {
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.change_habits h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-weight: 900;
+}
+.change_habits p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.change_habit p {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-weight: 400;
+  text-align: center;
+}
+
+.habit_boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.habit_box {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 231px;
+  height: 274px;
+  text-align: center;
+}
+.habit_box img {
+  border-radius: 50%;
+}
+
+.habit_box h2 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+}
+.habit_box p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+/* ======= Change Habits Section style End ======= */
 
 /* *-*-*-*- Responsive For Mobile Device -*-*-*-*-* */
 @media screen and (max-width: 576px) {
