@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.dFlex {
+  display: flex;
+}
+
+header {
+  max-width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+
+/* ======= Header Section style Start ======= */
+
+.header_container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 20px 0;
+}
+
+.nav,
+.menu {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: rgb(230, 83, 60);
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.menu {
+  gap: 20px;
+}
+
+.menu li {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+  background-color: rgba(230, 83, 60, 0.2);
+}
+
+.menu li a {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.menu li:first-child {
+  background-color: rgb(230, 83, 60);
+}
+
+.menu li:first-child a {
+  color: #fff;
+}
+
+/* ======= Header Section style End ======= */
+
+.main_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  padding: 20px;
+}
+
+.text_content {
+  max-width: 600px;
+}
+
+.text_content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.text_content .highlight {
+  font-family: "Cursive", serif;
+  font-size: 64px;
+  color: rgb(230, 83, 60);
+}
+
+.text_content p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.join_btn,
+.download_btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 45px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.join_btn {
+  background-color: rgb(230, 83, 60);
+  color: #fff;
+}
+
+.download_btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgb(230, 83, 60);
+}
+
+.image_content {
+  position: relative;
+}
+
+.image_content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.badge {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.top_badge span {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 900;
+}
+.top_badge small {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.top_badge {
+  top: 23%;
+  right: -10%;
+}
+
+.bottom_badge span {
+  color: rgb(250, 250, 249);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.bottom_badge small {
+  color: rgba(239, 237, 232, 0.65);
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.bottom_badge {
+  bottom: 13%;
+  left: -10%;
+}
+
+/* *-*-*-*- Responsive For Mobile Device -*-*-*-*-* */
+@media screen and (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+
+  .main_content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text_content {
+    max-width: 100%;
+  }
+
+  .image_content {
+    margin-top: 20px;
+  }
+  .top_badge {
+    top: 23%;
+    right: 0%;
+  }
+  .bottom_badge {
+    bottom: 13%;
+    left: -3%;
+  }
+  .join_btn,
+  .download_btn {
+    padding: 8px 10px;
+  }
+}
+
+/* *-*-*-*- Responsive For Tablet Device -*-*-*-*-* */
