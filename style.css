@@ -116,9 +116,10 @@ header {
 }
 
 .text_content .highlight {
-  font-family: "Inter", sans-serif;
-  font-size: 64px;
-  color: rgb(230, 83, 60);
+  font-family: "Great Vibes", cursive;
+  font-size: 90px;
+  font-weight: initial;
+  color: white;
 }
 
 .text_content p {
@@ -926,7 +927,7 @@ footer {
     font-size: 35px;
   }
   .text_content .highlight {
-    font-size: 35px;
+    font-size: 52px;
   }
 
   .text_content p {
